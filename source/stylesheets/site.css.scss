@@ -1,0 +1,381 @@
+@import url(bootstrap.css);
+@import url(bootstrap-responsive.css);
+
+$green: #aebf36;
+$mustard: #e8d32b;
+$aqua: #95b4c6;
+$orange: #f26522;
+$dark-gray:          #515050;
+$light-gray: #f1f1ef;
+$link-color:         $dark-gray;
+$link-hover-color:   $orange;
+$link-focus-color:   false;
+$link-active-color:  false;
+$link-visited-color: false;
+
+$font-color:  $dark-gray;
+$font-family: 'Open Sans', sans-serif;
+$base-font-size:   16px;
+$base-line-height: 24px;
+
+$display-font: 'Arvo', garamond, serif;
+$section-font: 'Open Sans Condensed', sans-serif;
+
+$mustard-height: 85px;
+
+/* -------------------------
+    GLOBAL
+--------------------------*/
+body {
+  color: $dark-gray;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: transparent url('/images/pn_bg.gif') no-repeat 30% 730px;
+}
+
+a, a:hover {
+  $color: $orange;
+  text-decoration: none;
+}
+
+section.content {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  h3 {
+    font-family: $section-font;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+  }
+  p, li {
+    color: $dark-gray;
+    font-family: $font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+  background-image: url('/images/dash.gif');
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  img {
+    max-width: 100%;
+  }
+}
+
+.mustard {
+  font-family: $display-font;
+  h4 {
+    margin: 20px;
+    text-decoration: underline;
+  }
+  background: $mustard;
+  font-weight: 600;
+  ul {
+    list-style-type: none;
+    margin: 20px;
+    li {
+      font-family: $display-font;
+    }
+  }
+}
+
+/* -------------------------
+    BOOTSTRAP OVERRIDES
+--------------------------*/
+
+.pull-right {
+  /* Bootstrap isn't forceful enough */
+  float: right !important;
+}
+
+.centered {
+  /* Borrowed from Zurb Foundations */
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* -------------------------
+    HEADER
+--------------------------*/
+
+header {
+  position: relative;
+  margin: 0 0 5px;
+  background-color: transparent, transparent;
+  background-image: url('/images/dash.gif'), url('/images/dash.gif');
+  background-repeat: repeat-x, repeat-x;
+  background-position: 0 25px, 0 100%;
+}
+
+header h1 {
+  background: $light-gray; 
+  width: 236px;
+  height: 175px;
+  margin: 20px auto 0 auto;
+}
+
+header h1 a {
+  display: block;
+  margin: 0 auto;
+  width: 236px;
+  height: 175px;
+  background: transparent url('/images/logo.png') no-repeat 50% 20px;
+  font-family: $section-font;
+  text-transform: uppercase;
+  color: $dark-gray;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 135px;
+  letter-spacing: .2em;
+  &:hover {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+  //text-indent: -9999px;
+}
+
+header nav {
+  position: relative;
+  top: -88px;
+  z-index: 0;
+  font-family: $display-font;
+}
+
+@media(max-width:767px) {
+  header nav {
+    top: 30px;
+    margin-bottom: 40px;
+  }
+  .row > [class*="span"], .row-fluid > [class*="span"] {
+    display: inline-block;
+  }
+}
+
+header ul {
+  list-style: none;
+  text-align: center;
+}
+
+header ul li {
+  font-size: 1.1em;
+  letter-spacing: .2em;
+  font-weight: 600;
+}
+
+@media(max-width:979px) {
+  header ul li[class*="span"] {
+    font-size: .8em;
+  }
+}
+
+@media(max-width:767px) {
+  header ul li[class*="span"] {
+    display: inline-block;
+    margin-left: 0.3em;
+    font-size: .8em;
+  }
+  header ul li:first-child {
+    margin-left: 0;
+  }
+  header ul li:before {
+    content: "/";
+    padding-right: 0.3em;
+  }
+  header ul li:first-child:before {
+    content: "";
+    display: none;
+  }
+}
+
+@media(max-width:480px) {
+  header ul li[class*="span"] {
+    font-size: 0.65em;
+  }
+}
+
+header ul li a {
+  display: inline-block;
+  padding: 0 0 5px;
+  border-bottom: 5px solid transparent;
+  color: $dark-gray;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  border-color: orange;
+  color: #515050;
+  text-decoration: none;
+}
+
+
+/* -------------------------
+    MAIN
+--------------------------*/
+
+.tagline {
+  padding: 2em 0;
+  background-color: $mustard;
+  text-align: center;
+}
+
+.tagline p {
+  /* Stupidly overspecific Bootstrap! */
+  margin-bottom: 0;
+  padding: 0 1em;
+  font-family: $display-font;
+  font-size: 2em;
+  line-height: 1.6em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  -moz-text-shadow: 1px 1px 1px #fff;
+  -webkit-text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+
+/* -------------------------
+    DECORATIVE LINES
+--------------------------*/
+
+.border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+  border-top: 20px solid $dark-gray;
+}
+
+.decor {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  width: 140px;
+  height: 100%;
+  /* (940/2) + 140 + 20 */
+  margin-left: -630px;
+  z-index: 100;
+  background: transparent url('/images/decorative-lines.gif') repeat-y 50% 20px;
+}
+
+@media(min-width:1170px) {
+  .decor {
+    /* (1170/2) + 140 + 20 */
+    margin-left: -745px;
+  }
+}
+
+@media(min-width:723px) and (max-width:979px) {
+  .decor {
+    /* (724/2) + 140 + 20 */
+    margin-left: -522px;
+  }
+}
+
+@media(max-width:767px) {
+  .decor {
+    display: none !important;
+  }
+}
+
+/* -------------------------
+    ABOUT 
+--------------------------*/
+#about {
+  figure {
+    figcaption {
+      background: $green;
+      color: #fff;
+      font-weight: 600;
+      font-family: $display-font;
+      padding: 10px;
+      position: relative;
+      top: -20px;
+      right: 20px;
+      width: 90%;
+    }
+  }
+  @media(max-width:767px) {
+    figure { 
+      display: none;
+    }
+  }
+}
+
+/* -------------------------
+    SERVICES
+--------------------------*/
+#services {
+  ul {
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+/* -------------------------
+    NUTRITION THERAPY
+--------------------------*/
+#nutrition-therapy {
+  @media(max-width:767px) {
+    .second-carrot {
+      display: none;
+    }
+  }
+}
+
+/* -------------------------
+    CONTACT
+--------------------------*/
+#contact {
+  .contact-form {
+    display: block;
+  }
+  .contact-form input[type="text"], .contact-form textarea, .contact-form select {
+    width: 100%;
+  }
+  .contact-form fieldset input, .contact-form fieldset label {
+    float: left;
+  }
+  .contact-form fieldset label {
+    display: block;
+  }
+  .contact-form fieldset input {
+    margin-right: 5px;
+  }
+}
+
+/* -------------------------
+    FOOTER 
+--------------------------*/
+footer {
+  background: $dark-gray;
+  color: $aqua;
+  text-align: center;
+  p {
+    margin: 10px;
+    &.copy {
+      background: transparent url(/images/pn_foot.png) no-repeat 50% 0;
+      padding-top: 50px;
+      display: block;
+      font-weight: 300;
+    }
+    &.disclaimer {
+      padding-top: 15px;
+    }
+  }
+}
