@@ -1,0 +1,325 @@
+@import url(bootstrap.css);
+@import url(bootstrap-responsive.css);
+/* -------------------------
+    GLOBAL
+--------------------------*/
+/* line 29, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+body {
+  color: #515050;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: transparent url("/images/pn_bg.gif") no-repeat 30% 730px; }
+
+/* line 37, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+a, a:hover {
+  text-decoration: none; }
+
+/* line 42, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+section.content {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("/images/dash.gif");
+  background-repeat: repeat-x;
+  background-position: 0 100%; }
+  /* line 45, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  section.content h3 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: .5em;
+    text-transform: uppercase; }
+  /* line 52, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  section.content p, section.content li {
+    color: #515050;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px; }
+
+/* line 63, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+figure {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0; }
+  /* line 70, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  figure img {
+    max-width: 100%; }
+
+/* line 75, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.mustard {
+  font-family: "Arvo", garamond, serif;
+  background: #e8d32b;
+  font-weight: 600; }
+  /* line 77, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  .mustard h4 {
+    margin: 20px;
+    text-decoration: underline; }
+  /* line 83, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  .mustard ul {
+    list-style-type: none;
+    margin: 20px; }
+    /* line 86, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+    .mustard ul li {
+      font-family: "Arvo", garamond, serif; }
+
+/* -------------------------
+    BOOTSTRAP OVERRIDES
+--------------------------*/
+/* line 96, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.pull-right {
+  /* Bootstrap isn't forceful enough */
+  float: right !important; }
+
+/* line 101, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.centered {
+  /* Borrowed from Zurb Foundations */
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+/* -------------------------
+    HEADER
+--------------------------*/
+/* line 113, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header {
+  position: relative;
+  margin: 0 0 5px;
+  background-color: transparent, transparent;
+  background-image: url("/images/dash.gif"), url("/images/dash.gif");
+  background-repeat: repeat-x, repeat-x;
+  background-position: 0 25px, 0 100%; }
+
+/* line 122, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header h1 {
+  background: #f1f1ef;
+  width: 236px;
+  height: 175px;
+  margin: 20px auto 0 auto; }
+
+/* line 129, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header h1 a {
+  display: block;
+  margin: 0 auto;
+  width: 236px;
+  height: 175px;
+  background: transparent url("/images/logo.png") no-repeat 50% 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #515050;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 135px;
+  letter-spacing: .2em; }
+  /* line 142, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header h1 a:hover {
+    text-decoration: none;
+    color: #515050; }
+
+/* line 149, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header nav {
+  position: relative;
+  top: -88px;
+  z-index: 0;
+  font-family: "Arvo", garamond, serif; }
+
+@media (max-width: 767px) {
+  /* line 157, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header nav {
+    top: 30px;
+    margin-bottom: 40px; }
+
+  /* line 161, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  .row > [class*="span"], .row-fluid > [class*="span"] {
+    display: inline-block; } }
+/* line 166, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header ul {
+  list-style: none;
+  text-align: center; }
+
+/* line 171, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header ul li {
+  font-size: 1.1em;
+  letter-spacing: .2em;
+  font-weight: 600; }
+
+@media (max-width: 979px) {
+  /* line 178, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header ul li[class*="span"] {
+    font-size: .8em; } }
+@media (max-width: 767px) {
+  /* line 184, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header ul li[class*="span"] {
+    display: inline-block;
+    margin-left: 0.3em;
+    font-size: .8em; }
+
+  /* line 189, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header ul li:first-child {
+    margin-left: 0; }
+
+  /* line 192, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header ul li:before {
+    content: "/";
+    padding-right: 0.3em; }
+
+  /* line 196, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header ul li:first-child:before {
+    content: "";
+    display: none; } }
+@media (max-width: 480px) {
+  /* line 203, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  header ul li[class*="span"] {
+    font-size: 0.65em; } }
+/* line 208, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header ul li a {
+  display: inline-block;
+  padding: 0 0 5px;
+  border-bottom: 5px solid transparent;
+  color: #515050;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+/* line 218, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+header ul li a:hover {
+  border-color: orange;
+  color: #515050;
+  text-decoration: none; }
+
+/* -------------------------
+    MAIN
+--------------------------*/
+/* line 229, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.tagline {
+  padding: 2em 0;
+  background-color: #e8d32b;
+  text-align: center; }
+
+/* line 235, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.tagline p {
+  /* Stupidly overspecific Bootstrap! */
+  margin-bottom: 0;
+  padding: 0 1em;
+  font-family: "Arvo", garamond, serif;
+  font-size: 2em;
+  line-height: 1.6em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  -moz-text-shadow: 1px 1px 1px #fff;
+  -webkit-text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #fff; }
+
+/* -------------------------
+    DECORATIVE LINES
+--------------------------*/
+/* line 254, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+  border-top: 20px solid #515050; }
+
+/* line 263, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+.decor {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  width: 140px;
+  height: 100%;
+  /* (940/2) + 140 + 20 */
+  margin-left: -630px;
+  z-index: 100;
+  background: transparent url("/images/decorative-lines.gif") repeat-y 50% 20px; }
+
+@media (min-width: 1170px) {
+  /* line 276, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  .decor {
+    /* (1170/2) + 140 + 20 */
+    margin-left: -745px; } }
+@media (min-width: 723px) and (max-width: 979px) {
+  /* line 283, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  .decor {
+    /* (724/2) + 140 + 20 */
+    margin-left: -522px; } }
+@media (max-width: 767px) {
+  /* line 290, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  .decor {
+    display: none !important; } }
+/* -------------------------
+    ABOUT 
+--------------------------*/
+/* line 300, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#about figure figcaption {
+  background: #aebf36;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Arvo", garamond, serif;
+  padding: 10px;
+  position: relative;
+  top: -20px;
+  right: 20px;
+  width: 90%; }
+@media (max-width: 767px) {
+  /* line 313, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  #about figure {
+    display: none; } }
+
+/* -------------------------
+    SERVICES
+--------------------------*/
+/* line 324, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#services ul li {
+  margin-bottom: 5px; }
+
+/* -------------------------
+    NUTRITION THERAPY
+--------------------------*/
+@media (max-width: 767px) {
+  /* line 335, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  #nutrition-therapy .second-carrot {
+    display: none; } }
+
+/* -------------------------
+    CONTACT
+--------------------------*/
+/* line 345, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#contact .contact-form {
+  display: block; }
+/* line 348, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#contact .contact-form input[type="text"], #contact .contact-form textarea, #contact .contact-form select {
+  width: 100%; }
+/* line 351, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#contact .contact-form fieldset input, #contact .contact-form fieldset label {
+  float: left; }
+/* line 354, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#contact .contact-form fieldset label {
+  display: block; }
+/* line 357, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+#contact .contact-form fieldset input {
+  margin-right: 5px; }
+
+/* -------------------------
+    FOOTER 
+--------------------------*/
+/* line 365, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+footer {
+  background: #515050;
+  color: #95b4c6;
+  text-align: left; }
+  /* line 369, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+  footer p {
+    margin: 10px; }
+    /* line 371, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+    footer p.copy {
+      background: transparent url(/images/pn_foot.png) no-repeat 50% 0;
+      padding-top: 50px;
+      display: block;
+      font-weight: 300; }
+    /* line 377, /Users/Justin/Documents/tentacu/plantednutrition/plantednutrition.com/source/stylesheets/site.css.scss */
+    footer p.disclaimer {
+      padding-top: 15px; }
